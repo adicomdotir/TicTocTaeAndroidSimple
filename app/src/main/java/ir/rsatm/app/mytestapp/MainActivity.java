@@ -53,18 +53,18 @@ public class MainActivity extends AppCompatActivity {
 
 
         b[1][3] = (Button) findViewById(R.id.button);
-        b[1][2] = (Button) findViewById(R.id.button2);
-        b[1][1] = (Button) findViewById(R.id.button3);
+        b[1][2] = (Button) findViewById(R.id.button1);
+        b[1][1] = (Button) findViewById(R.id.button2);
 
 
-        b[2][3] = (Button) findViewById(R.id.button4);
-        b[2][2] = (Button) findViewById(R.id.button5);
-        b[2][1] = (Button) findViewById(R.id.button6);
+        b[2][3] = (Button) findViewById(R.id.button3);
+        b[2][2] = (Button) findViewById(R.id.button4);
+        b[2][1] = (Button) findViewById(R.id.button5);
 
 
-        b[3][3] = (Button) findViewById(R.id.button7);
-        b[3][2] = (Button) findViewById(R.id.button8);
-        b[3][1] = (Button) findViewById(R.id.button9);
+        b[3][3] = (Button) findViewById(R.id.button6);
+        b[3][2] = (Button) findViewById(R.id.button7);
+        b[3][1] = (Button) findViewById(R.id.button8);
 
         for (i = 1; i <= 3; i++) {
             for (j = 1; j <= 3; j++)
