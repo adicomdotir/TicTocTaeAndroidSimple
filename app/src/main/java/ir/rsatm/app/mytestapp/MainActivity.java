@@ -80,11 +80,11 @@ public class MainActivity extends AppCompatActivity {
         for (i = 1; i <= 3; i++) {
             for (j = 1; j <= 3; j++) {
                 b[i][j].setOnClickListener(new MyClickListener(i, j));
-                if(!b[i][j].isEnabled()) {
-                    b[i][j].setText("-");
-                    b[i][j].setTextColor(0xff000000);
-                    b[i][j].setEnabled(true);
-                }
+
+                b[i][j].setText("-");
+                b[i][j].setTextColor(0xff000000);
+                b[i][j].setEnabled(true);
+
             }
         }
     }
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
             if (b[x][y].isEnabled()) {
                 b[x][y].setEnabled(false);
                 b[x][y].setText("O");
-                b[x][y].setTextColor(0xFFFFFFFF );
+                b[x][y].setTextColor(0xFFFF0000);
                 c[x][y] = 0;
                 textView.setText("");
                 if (!checkBoard()) {
@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
         private void markSquare(int x, int y) {
             b[x][y].setEnabled(false);
             b[x][y].setText("X");
-            b[x][y].setTextColor(0xFF00FF00);
+            b[x][y].setTextColor(0xFF088308);
             c[x][y] = 1;
             checkBoard();
         }
